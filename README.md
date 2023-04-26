@@ -1,6 +1,6 @@
 # Cloud Drive Frontend
 
-**Technologys:**
+**Technologies:**
 
 - _NextJS 13_
 - _TypeScript_

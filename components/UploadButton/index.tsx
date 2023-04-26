@@ -2,12 +2,14 @@ import React from "react";
 import styles from "@/styles/Home.module.scss";
 import { Button, Upload, UploadFile, notification } from "antd";
 import { CloudUploadOutlined } from "@ant-design/icons";
+import { useRouter } from "next/router";
 
 import * as Api from "@/api";
-import { FileItem } from "@/api/dto/files.dto";
 
 export const UploadButton: React.FC = () => {
   const [fileList, setFileList] = React.useState<UploadFile[]>([]);
+
+  const router = useRouter();
 
   const onUploadSuccess = async (options: any) => {
     try {
@@ -15,7 +17,8 @@ export const UploadButton: React.FC = () => {
 
       setFileList([]);
 
-      //   window.location.reload();
+      //   router.push("/dashboard");
+      location.reload();
     } catch (err) {
       notification.error({
         message: "Ошибка!",
@@ -32,7 +35,7 @@ export const UploadButton: React.FC = () => {
       onChange={({ fileList }) => setFileList(fileList)}
       className={styles.upload}>
       <Button type="primary" icon={<CloudUploadOutlined />} size="large">
-        Загрузить файл
+        Upload file
       </Button>
     </Upload>
   );

@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Header.module.scss";
 import { Avatar, Button, Layout, Menu, Popover } from "antd";
-import { CloudOutlined } from "@ant-design/icons";
+import { CloudOutlined, UserOutlined } from "@ant-design/icons";
 import { useRouter } from "next/router";
 
 import * as Api from "@/api";
@@ -45,7 +45,9 @@ export const Header: React.FC = () => {
                 Quit
               </Button>
             }>
-            <Avatar>D</Avatar>
+            <Avatar>
+              <UserOutlined />
+            </Avatar>
           </Popover>
         </div>
       </div>

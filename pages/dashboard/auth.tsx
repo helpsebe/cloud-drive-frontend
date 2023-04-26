@@ -8,7 +8,7 @@ const AuthPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Dashboard / Auth</title>
+        <title>Dashboard | Auth</title>
       </Head>
       <main style={{ width: 400, margin: "50px auto" }}>
         <Tabs

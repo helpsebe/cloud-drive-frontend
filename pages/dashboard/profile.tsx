@@ -60,7 +60,8 @@ export const getServerSideProps = async (ctx: GetServerSidePropsContext) => {
     return authProps;
   }
 
-  const userData = await Api.auth.getMe();
+  // const userData = await Api.auth.getMe();
+  const userData = {};
 
   return {
     props: { userData },

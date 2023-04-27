@@ -3,6 +3,7 @@ import { Header } from "@/components/Header";
 import React from "react";
 
 import styles from "@/styles/Home.module.scss";
+import NProgressLoader from "@/components/NProgressLoader";
 
 interface LayoutProps {
   title: string;
@@ -14,6 +15,7 @@ export const Layout: React.FC<React.PropsWithChildren<LayoutProps>> = ({
 }) => {
   return (
     <>
+      <NProgressLoader />
       <Head>
         <title>{title}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />

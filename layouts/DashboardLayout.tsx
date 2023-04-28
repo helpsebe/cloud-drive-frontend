@@ -8,7 +8,7 @@ import {
   FileImageOutlined,
   FileOutlined,
 } from "@ant-design/icons";
-import { useLoading } from "@/pages/LoadingContext";
+import useLoading from "@/pages/LoadingContext";
 
 export const DashboardLayout: React.FC<React.PropsWithChildren> = ({
   children,

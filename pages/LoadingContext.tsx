@@ -17,4 +17,6 @@ export const LoadingProvider = ({ children }: any) => {
   );
 };
 
-export const useLoading = () => React.useContext(LoadingContext);
+const useLoading = () => React.useContext(LoadingContext);
+
+export default useLoading;

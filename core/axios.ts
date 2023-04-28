@@ -1,7 +1,7 @@
 import axios from "axios";
 import { parseCookies } from "nookies";
 
-axios.defaults.baseURL = "http://localhost:7777";
+axios.defaults.baseURL = "https://cloud-drive-gxzd.onrender.com/";
 
 axios.interceptors.request.use((config) => {
   if (typeof window !== "undefined") {
